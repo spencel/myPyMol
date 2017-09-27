@@ -1,0 +1,20 @@
+Proteins:
+set bg_rgb=[0.95,0.95,0.95]
+show surface
+set transparency, 0.75
+show stick
+set stick_transparency, 0.5
+show cartoon
+set cartoon_transparency, 0.5
+set sphere_transparency, 0.75
+
+Ligands:
+ligand > A > hydrogens > add 
+label ligand,"%s" % (elem), 
+set sphere_transparency, 0.5, ligand
+set stick_transparency, 0, ligand
+
+hide surface
+
+Misc:
+show spheres on misc small molecules, eg, O2, Fe2+, etc.
